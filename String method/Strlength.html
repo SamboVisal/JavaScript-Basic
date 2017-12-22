@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+  var x ="I want kill someone";
+  var c = "I want to\"KILL YOU\"";
+  var a = "pisal";
+  var b = new String("pisal"); //a will return string and y will return objext
+</script>
+</head>
+<body>
+  <h2>The Length of string</h2>
+<p id="k"></p>
+  <h2>Special Character</h2>
+  <p>The solution to avoid this problem, is to use
+    the \ escape character.</p>
+<p id="k1"></p>
+<h2>Break code line</h2>
+<p id="k2"></p>
+<p id="demo"></p>
+<h2>Cant break up a code with backslash</h2>
+<p id="demo1"></p>
+<h2>Never Create string as object</h2>
+<p id="demo2"></p>
+<script>
+
+  document.getElementById("k").innerHTML=x.length;
+  document.getElementById("k1").innerHTML= c;
+  document.getElementById("k2").innerHTML = "Pisal.";
+  /*document.getElementById("k2").innerHTML = "Pisal.
+  "; this will remove line that has ID.
+  */
+  //if you add any texts front of \it will remove line
+  document.getElementById("demo").innerHTML = "Hello \
+    Dolly.";
+    document.getElementById("demo1").innerHTML ="Hello Dolly.";
+    //When using the == operator, equal strings are equal
+  document.getElementById("demo2").innerHTML = (a==b);
+</script>
+</body>
+</html>

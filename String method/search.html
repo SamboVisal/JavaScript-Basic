@@ -1,0 +1,18 @@
+</html>
+<html>
+<head></head>
+<body>
+<p id="click">Try me</p>
+<p id="p1">What do you mean dude?</p>
+<p id="p2"></p>
+<script>
+  document.getElementById("click").onclick = dis;
+  function dis(){
+      var x = document.getElementById("p1").innerHTML;
+      var re = x.search("mean");
+      document.getElementById("p2").innerHTML = re;
+  }
+
+</script>
+</body>
+</html>

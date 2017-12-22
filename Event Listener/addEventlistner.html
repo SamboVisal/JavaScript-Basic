@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+
+<button id="m">sss</button>
+<p id="ko"></p>
+<script>
+var x=document.getElementById("m");
+x.addEventListener("mouseover",mouse);
+x.addEventListener("click",cli);
+function mouse(){
+  document.getElementById("ko").innerHTML+="Click" + "<br>";
+}
+function cli()
+{
+  alert("hello dude");
+  
+}
+</script>
+</body>
+</html>

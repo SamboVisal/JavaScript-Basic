@@ -1,0 +1,60 @@
+</html>
+<html>
+<head></head>
+<body>
+
+<h2>toString</h2>
+<button onclick="my()">Click me</button>
+<p id="s"></p>
+<h2>toExponential</h2>
+toExponential() returns a string, with a number rounded and written using exponential notation.
+
+A parameter defines the number of characters behind the decimal point:
+<button id="k">Click me</button>
+<p id="s1"></p>
+<h2>toFixed</h2>
+toFixed() returns a string, with the number written with a specified number of decimals:
+9.5 will to 10; for toFixed(0); <br>
+<button id="k1">hi</button>
+<p id="s2"></p>
+<h2>toPrecision</h2>
+toPrecision() returns a string, with a number written with a specified length: <br>
+<button id="k2">asd</button>
+<p id="s3"></p>
+<h2>ValueOf</h2>
+valueOf() returns a number as a number.
+<p id="s4"></p>
+<script>
+
+function my(){
+  var number = 128;
+  document.getElementById("s").innerHTML = "128 =" +number +"decimal" +"<br>" +
+  number.toString(16) +"HexaDecimal"+ "<br>" + number.toString(8) + "Octal" +
+  number.toString(2) + "binary";
+}
+document.getElementById("k").onclick=m;
+function m(){
+    var x = 9.596;
+    document.getElementById("s1").innerHTML = x.toExponential() + "<br>" + x.toExponential(2) + "<br>"+
+    x.toExponential(4) + "<br>" + x.toExponential(6);
+
+}
+document.getElementById("k1").onclick=m1;
+function m1(){
+  var x= 9.456;
+  document.getElementById("s2").innerHTML = x.toFixed(0) + "<br>" +x.toFixed(2) + "<br>" +
+  x.toFixed(6);
+}
+document.getElementById("k2").onclick=m2;
+function m2(){
+  var x = 9.595;
+  document.getElementById("s3").innerHTML= x.toPrecision() + "<br>" + x.toPrecision(2) + "<br>" +
+  x.toPrecision(6);
+
+}
+var x =120;
+document.getElementById("s4").innerHTML=x.valueOf()+"<br>" + (150).valueOf();
+
+</script>
+</body>
+</html>

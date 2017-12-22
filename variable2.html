@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+var x = "2" + 4 + 7;
+var y=  2 + 4 + "7";
+</script>
+</head>
+<body>
+  <h4>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</h4>
+<p>The result of "2" + 4+7</p>
+<p id="a"></p>
+<script>
+  document.getElementById("a").innerHTML=x;
+</script>
+<h3>Now try this</h3>
+<p>The result of 2+4+"7"</p>
+<p id="b"></p>
+<script>
+  document.getElementById("b").innerHTML=y;
+</script>
+</body>
+</html>

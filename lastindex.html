@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+
+<button id="click">aaa</button>
+<p id="p1">What do you mean you?</p>
+<p id="p2"></p>
+<script>
+//Both the indexOf(), and the lastIndexOf() methods return -1 if the text is not found.
+  document.getElementById("click").onclick = dis;
+  function dis(){
+    var x = document.getElementById("p1").innerHTML;
+    var re = x.lastIndexOf("you");
+    document.getElementById("p2").innerHTML = re;
+  }
+</script>
+</body>
+</html>

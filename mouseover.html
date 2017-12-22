@@ -1,0 +1,26 @@
+<html>
+<head>
+  <style>
+  div {
+
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+<div onmouseover="mover(this)" onmouseout="mout(this)">Here!!!</div>
+<script>
+  function mover(a){
+
+    a.innerHTML="Pisal"
+  }
+  function mout(a){
+
+    a.innerHTML="Here!!!"
+  }
+</script>
+</body>
+</html>

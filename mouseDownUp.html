@@ -1,0 +1,26 @@
+<html>
+<head>
+  <style>
+  div {
+
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+<div onmousedown="mdown(this)" onmouseup="mup(this)">Here!!!</div>
+<script>
+  function mdown(a){
+    a.style.backgroundColor="pink";
+    a.innerHTML="Out"
+  }
+  function mup(a){
+    a.style.backgroundColor= "blue";
+    a.innerHTML="Here!!!"
+  }
+</script>
+</body>
+</html>

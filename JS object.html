@@ -1,0 +1,22 @@
+<html>
+<head>
+<script>
+var person = {
+    firstName : "Visal",
+    lastName  : "Sambo",
+    age       : 19
+};
+
+</script>
+</head>
+<body>
+  <p>You can use person.property or person["property"].</p>
+ <p id="s"></p>
+ <p id="s1"></p>
+<script>
+ document.getElementById("s").innerHTML =
+person["firstName"] +" " + person.lastName + " is"+" "+ person.age +" years old.";
+
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+</html>
+<html>
+<head></head>
+<body>
+<p id="p1"></p>
+<p>If a parameter is negative, the position is counted from the end of the string.</p>
+<p>If you omit the second parameter, the method will slice out the rest of the string</p>
+<p id="p2"></p>
+<p>If negative will count from the end</p>
+<p id="demo"></p>
+<script>
+  var x = "Apple, Samsung, Nokia";
+  var c = x.slice(7,14);
+  document.getElementById("p1").innerHTML = c;
+  document.getElementById("p2").innerHTML = x.slice(7);
+  document.getElementById("demo").innerHTML = x.slice(-10);
+</script>
+</body>
+</html>

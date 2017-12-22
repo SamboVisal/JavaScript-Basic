@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+  var person = {
+      name : "sambo",
+      age : "19",
+      sex : "male",
+      full : function (){
+          return this.name + " " + this.sex;
+      }
+  };
+</script>
+</head>
+<body>
+<h2>Methods are stored in properties as function definitions.</h2>
+<p id="k"></p>
+<script>
+  document.getElementById("k").innerHTML= person.age;
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+
+</head>
+<body>
+  <h2>The Number() Method
+Number() can be used to convert JavaScript variables to numbers:</h2>
+  <p id="ko"></p>
+  <h2>The parseInt() Method
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:</h2>
+<p id="k"></p>
+<script>
+document.getElementById("ko").innerHTML=
+Number(true) + "<br>" +
+Number(false) + "<br>" +
+Number(new Date()) + "<br>" +
+Number("  10") + "<br>" +
+Number("10  ") + "<br>" +
+Number("10 6");
+document.getElementById("k").innerHTML=
+parseInt("10")+"<br>"+
+parseInt("10 20")+"<br>"+
+parseInt(" 20")+"<br>"+
+parseInt("10 20 pisal")+"<br>"+
+parseInt("10 pisal");
+</script>
+</body>
+</html>

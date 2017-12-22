@@ -1,0 +1,62 @@
+<html>
+<head>
+<script>
+  var k = "Visal";
+  var j = "Sambo";
+  x = "KIT ";
+  x += " Cambodia";
+  var l = 5+6;
+  o = "Bonjour" +5;
+  p = "6" + 8 + 5;
+</script>
+<title>operator</title>
+</head>
+<body>
+
+<h2>The + operator concatenates strings</h2>
+<p id="s"></p>
+<p>The assignment operator += can concatenate strings.</p>
+<p id="c"></p>
+<p>Adding a number and a string, returns a string.</p>
+<p id="d"></p>
+<script>
+
+  document.getElementById("s").innerHTML= j+ " " + k;
+  document.getElementById("c").innerHTML= x + " ";
+  document.getElementById("d").innerHTML= l +"<br/>"+o+"<br/>"+p;
+</script>
+------------------------------------------------------------------------------------------------------------
+<p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+x = (100 + 50) * a;
+<p id="demo"></p>
+
+<script>
+var a = 3;
+var x = (100 + 50) * a;
+document.getElementById("demo").innerHTML = x;
+</script>
+--------------------------------------------------------------
+<h1>The % Operator</h1>
+
+<p id="de"></p>
+
+<script>
+var x = 5;
+var y = 2;
+var z = x % y;
+document.getElementById("de").innerHTML = z;
+</script>
+------------------------------------------------------------------
+<h1>The ++ Operator</h1>
+
+<p id="dem"></p>
+
+<script>
+var x = 5;
+x++;
+var z = x;
+document.getElementById("dem").innerHTML = z;
+</script>
+
+</body>
+</html>

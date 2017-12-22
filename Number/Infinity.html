@@ -1,0 +1,43 @@
+<html>
+<head>
+
+</head>
+
+<body>
+<p>nfinity (or -Infinity) is the value JavaScript will
+  return if you calculate a number outside the largest possible number.</p>
+<button onclick="my()">Check it</button>
+<p id="t"></p>
+nfinity is a number: typeof Infinity returns number.
+<p id="t1"></p>
+<h2>A number divided by a non-numeric string becomes NaN (Not a Number):</h2>
+<p id="t3"></p>
+<h2>A number divided by a numeric string becomes a number:</h2>
+<p id="t2"></p>
+<h2>You can use the global JavaScript
+  function isNaN() to find out if a value is a number.</h2>
+<p id="t4"></p>
+<h2>Watch out for NaN.
+  If you use NaN in a mathematical operation, the result will also be NaN</h2>
+<p id="t5"></p>
+  <script>
+  var number =2;
+  var result = "";
+  var x = 10/"apple";
+  var x1= NaN + 5;
+  function my(){
+
+      while(number!= Infinity){
+        number = number * number;
+        result += number + "<br/>"
+      };
+      document.getElementById("t").innerHTML= result;
+  }
+  document.getElementById("t1").innerHTML= typeof Infinity;
+  document.getElementById("t3").innerHTML = x;
+  document.getElementById("t2").innerHTML = 100/"10";
+  document.getElementById("t4").innerHTML = isNaN(x);
+  document.getElementById("t5").innerHTML = x1;
+  </script>
+</body>
+</html>

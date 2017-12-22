@@ -1,0 +1,19 @@
+<html>
+<head></head>
+<body>
+<h2>he indexOf() method returns the index of (the position of) the first occurrence
+  of a specified text in a string</h2>
+<p id="p1">This Is About What</p>
+<button id="click">Try This</button>
+<p id="p2"></p>
+<script>
+  document.getElementById("click").onclick = dis;
+  function dis(){
+    var str  = document.getElementById("p1").innerHTML;
+    var  pos = str.indexOf("About");
+    document.getElementById("p2").innerHTML = pos;
+  }
+
+</script>
+</body>
+</html>

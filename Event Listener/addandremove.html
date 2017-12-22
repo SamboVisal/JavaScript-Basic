@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+#d{
+   border: 1px soild black;
+   padding: 20px;
+   background-color: hotpink;
+   }
+</style>
+</head>
+<body>
+<div id="d">
+  <p>when click on this button the code will be terminented</p>
+<button id="m" onclick="removeHandler();">sss</button>
+</div>
+<p id="ma"></p>
+<script>
+var x=document.getElementById("d");
+x.addEventListener("mousemove",mouse);
+
+
+function mouse(){
+  
+  document.getElementById("ma").innerHTML= Math.random();
+}
+function removeHandler(){
+  document.getElementById("d").removeEventListener("mousemove",mouse);
+}
+</script>
+</body>
+</html>

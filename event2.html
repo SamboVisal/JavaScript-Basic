@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<h3> a function named displayDate will be
+executed when the button is clicked.</h3>
+<h2>Just hover me</h2>
+<button OnClick=displayDate()>What time is it?</button>
+<script>
+  function displayDate(){
+      document.getElementById("time").innerHTML=Date();
+
+  }
+  $(document).ready(function(){
+    $("h3").click(function(){
+      $(this).hide();
+    });
+    $("h2").mouseenter(function(){
+      alert("You have hover me dude!!!");
+    });
+  });
+</script>
+<p id="time"></p>
+</body>
+</html>

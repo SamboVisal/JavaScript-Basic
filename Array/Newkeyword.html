@@ -1,0 +1,47 @@
+<html>
+<head></head>
+
+<body>
+<h2>Using new keyword</h2>
+<p id="fu"></p>
+<h2>Using index</h2>
+<p id="index"></p>
+<p>Click to append array</p>
+<button onclick="app()">Try it</button>
+<button onclick="app1()">Add more</button>
+<h2>Using for loop</h2>
+<p id="for"></p>
+<h2>How to recognize array</h2>
+<p id="type"></p>
+<p id="isarray"></p>
+<p id="Instance"></p>
+<script>
+var team = ["Manutd","Chelsea","Arsenal","ManCity"];
+var array = new Array("Pisal","Visal","SalMinoz");
+var fuc = ["Visal","Pisal","Kaka","Koko","Lala"];
+ document.getElementById("index").innerHTML = team;
+ document.getElementById("fu").innerHTML = array;
+ function app()
+ {
+   team.push("Liverpool")
+    document.getElementById("index").innerHTML=team;
+ }
+ function app1(){
+   team[team.length] = "spur";
+   //team[5] = "Spur";
+   document.getElementById("index").innerHTML=team;
+ }
+ var i;
+ var text = "";
+ for(i=0; i<fuc.length;i++)
+  {
+   text+=fuc[i] + "</br>";
+  }
+  document.getElementById("for").innerHTML = text;
+  var type = ["Red","Yellow","Pink","Blue","Gray"];
+  document.getElementById("type").innerHTML = typeof type;
+  document.getElementById("isarray").innerHTML = Array.isArray(type);
+  document.getElementById("Instance").innerHTML = team instanceof Array;
+</script>
+</body>
+</html>

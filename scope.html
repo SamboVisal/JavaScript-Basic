@@ -1,0 +1,24 @@
+<html>
+<head>
+
+</head>
+<body>
+  <h2><p>The local variable carName cannot be accessed
+    from code outside the function:</p></h2>
+<p id="k"></p>
+<h2>In HTML, all global variables will become window variables.</h2>
+<p id="s"></p>
+<script>
+var person = "Volvo";
+ myFunction();
+document.getElementById("k").innerHTML =
+"i can deplay "+ typeof person;
+
+document.getElementById("s").innerHTML =
+"Window.person is " + window.person;
+function myFunction() {
+//will not display if you put var person = "Volvo"; because it is outside the function
+}
+</script>
+</body>
+</html>
